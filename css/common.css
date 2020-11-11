@@ -100,7 +100,11 @@ header, nav, section, article, footer {
 
 .border4 {
   -webkit-border-radius: 4px;
-  border-radius: 4px; }
+  border-radius: 4px;
+  border: 1px solid #f6f4f4; }
+
+.p10 {
+  padding: 0 10px; }
 
 body {
   font-family: poppins,NtSansKR,cormorant;
@@ -108,7 +112,8 @@ body {
   font-weight: 400;
   color: #f6f4f4;
   line-height: 21px;
-  word-break: keep-all; }
+  word-break: keep-all;
+  background: #282828; }
 
 #header {
   display: none;
@@ -120,24 +125,16 @@ body {
   z-index: 1000;
   background: #171717; }
 
-.logo {
-  top: 7.5px;
-  left: 133.5px;
-  width: 93px;
-  height: 43px; }
-  .logo, .logo a img {
-    position: absolute; }
-
 .btn_menu {
   top: 17px;
   left: 16px;
   width: 26px;
-  height: 26px; }
+  height: 26px;
+  z-index: 1100;
+  overflow: hidden; }
   .btn_menu, .btn_menu .line {
     position: absolute; }
   .btn_menu .line {
-    -webkit-border-radius: 4px;
-    border-radius: 4px;
     width: 100%;
     height: 4px;
     left: 0;
@@ -149,6 +146,50 @@ body {
   .btn_menu .btm {
     bottom: 0;
     width: 60%; }
+
+.logo {
+  top: 7.5px;
+  left: 133.5px;
+  width: 93px;
+  height: 43px; }
+  .logo, .logo a img {
+    position: absolute; }
+  .logo a img {
+    padding-top: 10.5px; }
+
+#gnb {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  /* left: 100%; */
+  width: 300px;
+  background: #ffffff;
+  color: #171717;
+  font-weight: 700;
+  /* overflow-y: auto; */ }
+  #gnb > ul {
+    padding-top: 200px;
+    position: relative; }
+    #gnb > ul::before {
+      content: "";
+      position: absolute;
+      top: 44px;
+      left: 0;
+      background: url("../images/icon/common/navLogo.svg") no-repeat; }
+    #gnb > ul > li {
+      font-size: 18px; }
+      #gnb > ul > li > a {
+        padding: 40px 20px; }
+        #gnb > ul > li > a:first-child {
+          padding-top: 26px; }
+    #gnb > ul ul li a {
+      display: block; }
+    #gnb > ul ul li ul {
+      background: #f6f4f4;
+      padding: 13.5px 0;
+      margin-top: 8px; }
+      #gnb > ul ul li ul li a {
+        padding: 7px 20px; }
 
 .util {
   top: 18px;
@@ -166,32 +207,32 @@ body {
       background: #44AEC6; }
 
 #footer {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
   background: #171717;
   width: 100%;
-  height: 264px;
   font-size: 12px;
-  text-align: center; }
-  #footer a {
-    display: inline-block; }
-  #footer a img {
+  text-align: center;
+  margin-top: 117px;
+  padding: 50px 18px; }
+  #footer > a {
+    display: inline-block;
     width: 146px;
     height: 33.48px;
-    padding: 50px 0 42px;
-    text-align: center; }
+    padding: 50px 0 42px; }
+  #footer ul, #footer address {
+    width: 324px; }
   #footer ul li {
-    float: left; }
+    display: inline-block;
+    /* position: relative; */
+    /* &::before{
+        @include transform(transitionY(6px));
+        content: "";position: absolute;top: 50%;left: 0;width: 1px;height: 12px;background: $dark_white;
+    } */ }
     #footer ul li + li {
-      margin-left: 9px; }
+      margin: 0 4px; }
     #footer ul li .privacy {
       font-weight: 700; }
-  #footer address span::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 1px;
-    height: 1px;
-    background: #f6f4f4; }
   #footer .copyright {
     padding-bottom: 50px; }
 
