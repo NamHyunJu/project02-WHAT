@@ -1,0 +1,28 @@
+@charset "utf-8";
+@import "_mixin","_var";
+
+/* tattoo */
+
+
+
+
+.sns{
+    p{margin: 90px auto 38px;}
+    .snsicon{
+        li{display: inline-block;
+        &:nth-child(3){width: 45px;height: 45px;}
+        &+li{margin-left: 30px;}
+        }
+    }
+}
+.recruit{
+    margin-top: 79px;
+    .txtwrap{left: 0;top: 0;width: 100%;height: 41.666666667vw;background: $mint;}
+    strong,p,a{font-weight: 700;}
+    strong{font-size: 18px;line-height: 27px;}
+    p{font-size: 13px;margin-top: 2px;line-height: 20px;}
+    a{
+        @include boxsizing;
+        display:block;font-size: 8px;height: 13.3%;line-height: 13.3%;padding: 4px;
+    }
+}
