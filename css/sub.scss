@@ -2,10 +2,108 @@
 @import "_mixin","_var";
 
 /* tattoo */
-
-
-
-
+.sub_tit{font-size: $px16;line-height: 6.944444444444444vw;font-weight: 700;}
+#content{margin-top: 108px;}
+.sub_visual{
+    text-align: right;
+    .swiper-container{
+        height: 111.1111111111111vw;
+        .swiper-slide{
+            position: relative;
+            img{width: 75.6vw;}
+            .twtwrap{
+                position: absolute;z-index: 500;bottom: 0;right: 0;width: 74.3vw;height: 34.3vw;background: red/* rgba(23,23,23,0.8) */;
+                .sub_tit{font-size: $px18;line-height: 7.5vw;}
+                p{
+                    font-weight: 700;
+                    &.btn_goGoods{
+                        @include boxsizing;
+                        font-size: $px8;text-align: center;height: $px12;line-height: $px12;}
+                }
+            }
+        }
+        .swiper-pagination-fraction{
+            bottom: 10px;
+            left: 7.5vw;
+            width: 53.61111111111111vw;
+        }
+        >button{position: absolute;z-index: 100;bottom: 0;right: 13.1%;width: $px24;height: $px24;}
+        .autoplay{display: none;}
+    }
+}
+.tattooist{
+    padding-left: 10px;margin-top: 107px;width:100%;
+    .sub_tit{margin-bottom: 19px;}
+    .swiper-slide{
+        width: $px101;
+        a,img{display: block;}
+        img{width: $px80;height: $px80;}
+        p{font-size: $px12;line-height: $px18;margin-top: 5px;}
+        }
+}
+.coverup{
+    margin-top: 90px;
+    .swiper-container{
+        margin-top: 10px;width: 100vw;background: $white;height: 112.7777777777778vw;
+        .swiper-slide{
+            img{display:inline-block;padding: 10px 10px 53px 10px;width: 94.44444444444444vw;}
+            .txtwrap{
+                .txt{
+                    position: relative;color:$dark_gray;margin-bottom: 20px;
+                    &::before{content:"";position: absolute;top: -30px;left: calc(50% - 20px);width: 40px;height: 2px;background: #363636;}
+                }
+                .instar_id{font-size: $px12;line-height: $px18;color: #999999;margin-bottom:9px;}
+            }
+        }
+        .swiper-pagination{
+            bottom: 20px;
+        }
+        .swiper-pagination-bullet {background: #a8a8a8;}
+        .swiper-pagination-bullet-active{background: #282828;}
+    }
+}
+.best_item{
+    margin-top: 57px;
+    ul{
+        li{
+            float: left;width: 45vw;
+            &:nth-child(1),&:nth-child(3){margin-right: $px16;}
+            &:nth-child(3),&:nth-child(4){margin-top: 27px;}
+            &:nth-child(4){
+                background: $white;height: 25.55555555555556vw;
+                a{
+                    position: relative;display: block;height: 100%;
+                    &::after, span::before,span::after{
+                        @include transform(translate(-50%,-50%));
+                        content: "";position: absolute;top: 50%;left:50%;
+                    }
+                    &::after{
+                        width: 12.5vw;height: 12.5vw;border-radius: 100%;background: $mint;}
+                    span{
+                        &::before,&::after{width: $px18;height: 0.6944444444444444vw;background:$white;z-index: 500;}
+                        &::after{@include transform(translate(-50%,-50%) rotate(90deg));}
+                    }
+                }
+            }
+            &:nth-child(5){
+                display: table;margin-top: 13px;
+                p{
+                    display: table-cell;vertical-align: middle;
+                    border: 1px solid #f0f0f0;text-align: center;height: 25.55555555555556vw;
+                }
+            }
+            div{
+                img{display: inline-block;width: 45vw;}
+                .goods_txt{
+                    @include boxsizing;
+                    background: $mint;width: 100%;padding: $px17 0 $px17 $px17;
+                    .price{line-height: 14px;padding-top: 4px;}
+                }
+            }
+            p{font-size: 12px;}
+        }
+    }
+}
 .sns{
     p{margin: 90px auto 38px;}
     .snsicon{
@@ -16,13 +114,13 @@
     }
 }
 .recruit{
-    margin-top: 79px;
-    .txtwrap{left: 0;top: 0;width: 100%;height: 41.666666667vw;background: $mint;}
+    display: table;margin-top: 79px;left: 0;top: 0;width: 100%;height: 41.666666667vw;background: $mint;
+    .txtwrap{display: table-cell;vertical-align: middle;}
     strong,p,a{font-weight: 700;}
-    strong{font-size: 18px;line-height: 27px;}
-    p{font-size: 13px;margin-top: 2px;line-height: 20px;}
+    strong{font-size: $px18;line-height: 7.5vw;}
+    p{font-size: $px13;margin: 2px 0 8px;line-height: $px20;}
     a{
         @include boxsizing;
-        display:block;font-size: 8px;height: 13.3%;line-height: 13.3%;padding: 4px;
+        display:inline-block;font-size: $px8;padding: 0.8333333333333333vw 1.388888888888889vw;
     }
 }

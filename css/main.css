@@ -4,9 +4,9 @@
   font-weight: 700;
   width: 100%; }
   .main_visual .swiper-container {
-    height: 522px; }
+    height: 145vw; }
     .main_visual .swiper-container .swiper-wrapper {
-      height: 490px; }
+      height: 136.1111111111111vw; }
       .main_visual .swiper-container .swiper-wrapper .swiper-slide {
         position: relative; }
         .main_visual .swiper-container .swiper-wrapper .swiper-slide .txtwrap {
@@ -36,7 +36,8 @@
             height: 37px;
             line-height: 37px;
             text-align: center;
-            margin-top: 4px; }
+            margin-top: 4px;
+            font-size: 14px; }
     .main_visual .swiper-container .swiper-pagination {
       -webkit-box-sizing: border-box;
       box-sizing: border-box;
@@ -53,8 +54,8 @@
       z-index: 100;
       bottom: 0;
       right: 38.6%;
-      width: 24px;
-      height: 24px; }
+      width: 6.6666666667vw;
+      height: 6.6666666667vw; }
     .main_visual .swiper-container .autoplay {
       display: none; }
 

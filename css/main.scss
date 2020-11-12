@@ -5,9 +5,9 @@
 .main_visual{
     margin-top:58px;font-weight: 700;width: 100%;
     .swiper-container{
-        height: 522px;
+        height: 145vw;
         .swiper-wrapper{
-            height: 490px;
+            height: 136.1111111111111vw;
             .swiper-slide{
                 position: relative;
                 .txtwrap{
@@ -17,7 +17,7 @@
                     .btn_more{
                         @include radius(4px);
                         @include boxsizing;
-                        display:inline-block;border: 2px solid $dark_white;width: 89px;height: 37px;line-height: 37px;text-align: center;margin-top: 4px;
+                        display:inline-block;border: 2px solid $dark_white;width: 89px;height: 37px;line-height: 37px;text-align: center;margin-top: 4px;font-size: 14px;
                     }
                 }
             }
@@ -33,11 +33,9 @@
             height: 10px;
           }
         .swiper-pagination-bullet-active{background: $mint;}
-        >button{position: absolute;z-index: 100;bottom: 0;right: 38.6%;width: 24px;height: 24px;}
+        >button{position: absolute;z-index: 100;bottom: 0;right: 38.6%;width: $px24;height: $px24;}
         .autoplay{display: none;}
      }
-    
-    
 }
 .main_tit{font-size: 20px;line-height: 30px;}
 .donate{

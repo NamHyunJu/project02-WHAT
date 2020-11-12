@@ -109,10 +109,10 @@ header, nav, section, article, footer {
 
 body {
   font-family: poppins,NtSansKR,cormorant;
-  font-size: 14px;
+  font-size: 3.8888888889vw;
   font-weight: 400;
   color: #f6f4f4;
-  line-height: 21px;
+  line-height: 5.8333333333vw;
   word-break: keep-all;
   background: #282828; }
 
@@ -163,7 +163,7 @@ body {
     left: 83.3vw; }
 
 #gnb {
-  display: none;
+  /*  display:none; */
   position: fixed;
   top: 0;
   left: 0;
@@ -172,45 +172,50 @@ body {
   font-weight: 700;
   background: #ffffff;
   width: 83.3vw;
-  overflow-y: auto; }
+  overflow-y: auto;
+  z-index: 100; }
   #gnb span {
     display: block;
-    background: url("../images/icon/common/navLogo.svg") no-repeat;
-    width: 100%;
-    height: 11.7%;
     left: 0;
-    top: 4vw; }
+    top: 12.2222222222vw;
+    width: 100vw;
+    height: 36.1111111111vw;
+    background: url("../images/icon/common/navLogo.svg") no-repeat; }
   #gnb > ul {
-    padding: 31.3vw 0 9vw 0; }
+    padding: 7.2222222222vw 0 9vw 0;
+    margin-top: 55.5555555556vw;
+    background: red; }
     #gnb > ul > li {
-      padding: 15px 20px; }
+      padding: 4.1666666667vw 5.5555555556vw; }
       #gnb > ul > li > a {
         position: relative;
-        font-size: 18px;
-        margin-bottom: 5px; }
+        font-size: 5vw;
+        margin-bottom: 1.3888888889vw; }
         #gnb > ul > li > a::after {
+          -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
           content: "";
           position: absolute;
-          width: 4.444444444vw;
-          height: 4.444444444vw;
-          right: 20px;
-          top: calc(50% - 2.222222222vw);
+          width: 4.4444444444vw;
+          height: 4.4444444444vw;
+          right: 5.5555555556vw;
+          top: 50%;
           background: url("../images/icon/common/down.svg") no-repeat; }
       #gnb > ul > li.on > a::after {
         background-image: url(../images/icon/common/up.svg); }
   #gnb ul li a {
     display: block;
-    height: 25px;
-    line-height: 25px; }
+    height: 6.9444444444vw;
+    line-height: 6.9444444444vw; }
   #gnb ul li ul {
-    display: none;
+    /* display:none; */
     background: #f6f4f4;
     margin: 0 -20px;
-    padding: 14px 0; }
+    padding: 3.8888888889vw 0; }
     #gnb ul li ul li {
-      padding: 3px 20px; }
+      padding: 0.8333333333vw 5.5555555556vw; }
       #gnb ul li ul li a {
-        font-size: 16px; }
+        font-size: 4.4444444444vw; }
 
 .util {
   top: 15px;
@@ -250,11 +255,8 @@ body {
     width: 146px;
     height: 33.48px;
     padding: 50px 0 42px; }
-  #footer ul, #footer address {
-    width: 88.88888888888889%; }
   #footer ul li {
-    display: inline-block;
-    /* position: relative; */ }
+    display: inline-block; }
     #footer ul li + li {
       margin: 0 3px; }
     #footer ul li .privacy {

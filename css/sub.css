@@ -1,4 +1,167 @@
 /* tattoo */
+.sub_tit {
+  font-size: 4.4444444444vw;
+  line-height: 6.944444444444444vw;
+  font-weight: 700; }
+
+#content {
+  margin-top: 108px; }
+
+.sub_visual {
+  text-align: right; }
+  .sub_visual .swiper-container {
+    height: 111.1111111111111vw; }
+    .sub_visual .swiper-container .swiper-slide {
+      position: relative; }
+      .sub_visual .swiper-container .swiper-slide img {
+        width: 75.6vw; }
+      .sub_visual .swiper-container .swiper-slide .twtwrap {
+        position: absolute;
+        z-index: 500;
+        bottom: 0;
+        right: 0;
+        width: 74.3vw;
+        height: 34.3vw;
+        background: red; }
+        .sub_visual .swiper-container .swiper-slide .twtwrap .sub_tit {
+          font-size: 5vw;
+          line-height: 7.5vw; }
+        .sub_visual .swiper-container .swiper-slide .twtwrap p {
+          font-weight: 700; }
+          .sub_visual .swiper-container .swiper-slide .twtwrap p.btn_goGoods {
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            font-size: 2.2222222222vw;
+            text-align: center;
+            height: 3.3333333333vw;
+            line-height: 3.3333333333vw; }
+    .sub_visual .swiper-container .swiper-pagination-fraction {
+      bottom: 10px;
+      left: 7.5vw;
+      width: 53.61111111111111vw; }
+    .sub_visual .swiper-container > button {
+      position: absolute;
+      z-index: 100;
+      bottom: 0;
+      right: 13.1%;
+      width: 6.6666666667vw;
+      height: 6.6666666667vw; }
+    .sub_visual .swiper-container .autoplay {
+      display: none; }
+
+.tattooist {
+  padding-left: 10px;
+  margin-top: 107px;
+  width: 100%; }
+  .tattooist .sub_tit {
+    margin-bottom: 19px; }
+  .tattooist .swiper-slide {
+    width: 28.0555555556vw; }
+    .tattooist .swiper-slide a, .tattooist .swiper-slide img {
+      display: block; }
+    .tattooist .swiper-slide img {
+      width: 22.2222222222vw;
+      height: 22.2222222222vw; }
+    .tattooist .swiper-slide p {
+      font-size: 3.3333333333vw;
+      line-height: 5vw;
+      margin-top: 5px; }
+
+.coverup {
+  margin-top: 90px; }
+  .coverup .swiper-container {
+    margin-top: 10px;
+    width: 100vw;
+    background: #ffffff;
+    height: 112.7777777777778vw; }
+    .coverup .swiper-container .swiper-slide img {
+      display: inline-block;
+      padding: 10px 10px 53px 10px;
+      width: 94.44444444444444vw; }
+    .coverup .swiper-container .swiper-slide .txtwrap .txt {
+      position: relative;
+      color: #171717;
+      margin-bottom: 20px; }
+      .coverup .swiper-container .swiper-slide .txtwrap .txt::before {
+        content: "";
+        position: absolute;
+        top: -30px;
+        left: calc(50% - 20px);
+        width: 40px;
+        height: 2px;
+        background: #363636; }
+    .coverup .swiper-container .swiper-slide .txtwrap .instar_id {
+      font-size: 3.3333333333vw;
+      line-height: 5vw;
+      color: #999999;
+      margin-bottom: 9px; }
+    .coverup .swiper-container .swiper-pagination {
+      bottom: 20px; }
+    .coverup .swiper-container .swiper-pagination-bullet {
+      background: #a8a8a8; }
+    .coverup .swiper-container .swiper-pagination-bullet-active {
+      background: #282828; }
+
+.best_item {
+  margin-top: 57px; }
+  .best_item ul li {
+    float: left;
+    width: 45vw; }
+    .best_item ul li:nth-child(1), .best_item ul li:nth-child(3) {
+      margin-right: 4.4444444444vw; }
+    .best_item ul li:nth-child(3), .best_item ul li:nth-child(4) {
+      margin-top: 27px; }
+    .best_item ul li:nth-child(4) {
+      background: #ffffff;
+      height: 25.55555555555556vw; }
+      .best_item ul li:nth-child(4) a {
+        position: relative;
+        display: block;
+        height: 100%; }
+        .best_item ul li:nth-child(4) a::after, .best_item ul li:nth-child(4) a span::before, .best_item ul li:nth-child(4) a span::after {
+          -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 50%; }
+        .best_item ul li:nth-child(4) a::after {
+          width: 12.5vw;
+          height: 12.5vw;
+          border-radius: 100%;
+          background: #44AEC6; }
+        .best_item ul li:nth-child(4) a span::before, .best_item ul li:nth-child(4) a span::after {
+          width: 5vw;
+          height: 0.6944444444444444vw;
+          background: #ffffff;
+          z-index: 500; }
+        .best_item ul li:nth-child(4) a span::after {
+          -webkit-transform: translate(-50%, -50%) rotate(90deg);
+          transform: translate(-50%, -50%) rotate(90deg); }
+    .best_item ul li:nth-child(5) {
+      display: table;
+      margin-top: 13px; }
+      .best_item ul li:nth-child(5) p {
+        display: table-cell;
+        vertical-align: middle;
+        border: 1px solid #f0f0f0;
+        text-align: center;
+        height: 25.55555555555556vw; }
+    .best_item ul li div img {
+      display: inline-block;
+      width: 45vw; }
+    .best_item ul li div .goods_txt {
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      background: #44AEC6;
+      width: 100%;
+      padding: 4.7222222222vw 0 4.7222222222vw 4.7222222222vw; }
+      .best_item ul li div .goods_txt .price {
+        line-height: 14px;
+        padding-top: 4px; }
+    .best_item ul li p {
+      font-size: 12px; }
+
 .sns p {
   margin: 90px auto 38px; }
 .sns .snsicon li {
@@ -10,29 +173,30 @@
     margin-left: 30px; }
 
 .recruit {
-  margin-top: 79px; }
+  display: table;
+  margin-top: 79px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 41.666666667vw;
+  background: #44AEC6; }
   .recruit .txtwrap {
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 41.666666667vw;
-    background: #44AEC6; }
+    display: table-cell;
+    vertical-align: middle; }
   .recruit strong, .recruit p, .recruit a {
     font-weight: 700; }
   .recruit strong {
-    font-size: 18px;
-    line-height: 27px; }
+    font-size: 5vw;
+    line-height: 7.5vw; }
   .recruit p {
-    font-size: 13px;
-    margin-top: 2px;
-    line-height: 20px; }
+    font-size: 3.6111111111vw;
+    margin: 2px 0 8px;
+    line-height: 5.5555555556vw; }
   .recruit a {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    display: block;
-    font-size: 8px;
-    height: 13.3%;
-    line-height: 13.3%;
-    padding: 4px; }
+    display: inline-block;
+    font-size: 2.2222222222vw;
+    padding: 0.8333333333333333vw 1.388888888888889vw; }
 
 /*# sourceMappingURL=sub.css.map */
