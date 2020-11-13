@@ -3,7 +3,7 @@
 
 /* tattoo */
 .sub_tit{font-size: $px16;line-height: 6.944444444444444vw;font-weight: 700;}
-#content{margin-top: 108px;}
+#content{margin-top: 30vw;}
 .sub_visual{
     text-align: right;
     .swiper-container{
@@ -22,12 +22,15 @@
                 }
             }
         }
-        .swiper-pagination-fraction{
+        /* .swiper-pagination{bottom: 10px;
+            left: 7.5vw;
+            width: 53.61111111111111vw;background: red;} */
+        .swiper-pagination/* -fraction */{
             bottom: 10px;
             left: 7.5vw;
-            width: 53.61111111111111vw;
+            width: 53.61111111111111vw;height: 16.66666666666667vw;background: red;
         }
-        >button{position: absolute;z-index: 100;bottom: 0;right: 13.1%;width: $px24;height: $px24;}
+        >button{position: absolute;z-index: 100;bottom: 32.77777777777778vw;left: $px44;width: $px30;height: $px30;}
         .autoplay{display: none;}
     }
 }
@@ -89,7 +92,7 @@
                 display: table;margin-top: 13px;
                 p{
                     display: table-cell;vertical-align: middle;
-                    border: 1px solid #f0f0f0;text-align: center;height: 25.55555555555556vw;
+                    border: 1px solid #f0f0f0;text-align: center;height: 25.55555555555556vw;font-size: $px14;/* 상속을 못받음 왜? */
                 }
             }
             div{

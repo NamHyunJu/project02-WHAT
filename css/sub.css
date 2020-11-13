@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* tattoo */
 .sub_tit {
   font-size: 4.4444444444vw;
@@ -5,12 +6,15 @@
   font-weight: 700; }
 
 #content {
-  margin-top: 108px; }
+  margin-top: 30vw; }
 
 .sub_visual {
   text-align: right; }
   .sub_visual .swiper-container {
-    height: 111.1111111111111vw; }
+    height: 111.1111111111111vw;
+    /* .swiper-pagination{bottom: 10px;
+        left: 7.5vw;
+        width: 53.61111111111111vw;background: red;} */ }
     .sub_visual .swiper-container .swiper-slide {
       position: relative; }
       .sub_visual .swiper-container .swiper-slide img {
@@ -35,17 +39,19 @@
             text-align: center;
             height: 3.3333333333vw;
             line-height: 3.3333333333vw; }
-    .sub_visual .swiper-container .swiper-pagination-fraction {
+    .sub_visual .swiper-container .swiper-pagination {
       bottom: 10px;
       left: 7.5vw;
-      width: 53.61111111111111vw; }
+      width: 53.61111111111111vw;
+      height: 16.66666666666667vw;
+      background: red; }
     .sub_visual .swiper-container > button {
       position: absolute;
       z-index: 100;
-      bottom: 0;
-      right: 13.1%;
-      width: 6.6666666667vw;
-      height: 6.6666666667vw; }
+      bottom: 32.77777777777778vw;
+      left: 12.2222222222vw;
+      width: 8.3333333333vw;
+      height: 8.3333333333vw; }
     .sub_visual .swiper-container .autoplay {
       display: none; }
 
@@ -146,7 +152,9 @@
         vertical-align: middle;
         border: 1px solid #f0f0f0;
         text-align: center;
-        height: 25.55555555555556vw; }
+        height: 25.55555555555556vw;
+        font-size: 3.8888888889vw;
+        /* 상속을 못받음 왜? */ }
     .best_item ul li div img {
       display: inline-block;
       width: 45vw; }

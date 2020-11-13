@@ -2,24 +2,32 @@
 <html lang="ko">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> WHAT </title>
     <link rel="apple-touch-icon" href="images/icon/common/iphone.png" />
     <link rel="shortcut icon" href="images/icon/common/android.png" />
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="css/swiper-bundle.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/main.js"></script>
+
 </head>
 <body>
     <header id="header">
         <h1 class="logo">
-            <!-- alt대신 aria-label -->
-            <a href="index.html" aria-label="WHAT"><img src="images/icon/common/logo.svg" alt=""></a>
+            <a href="index.html"><img src="images/icon/common/logo.svg" alt="WHAT"></a>
         </h1>
-        <button class="btn_menu">
+        <button class="btn_menu" type="button">
             <span class="blind-b">메뉴 열기</span>
             <span class="line top"></span>
             <span class="line mid"></span>
             <span class="line btm"></span>
         </button>
-        <nav id="gnb">
+        <nav id="gnb" class="p_r">
+            <span class="p_a"></span><!-- navlogo -->
             <ul>
                 <li class="gnb1">
                     <a href="" data-link="first">재능기부 하기</a>
@@ -59,13 +67,16 @@
                         <li><a href="">마스킹테이프</a></li>
                         <li><a href="">핸드폰케이스</a></li>
                         <li><a href="">그립톡</a></li>
-                        <li><a href="" data-link="last">티켓</a></li>
+                        <li><a href="">티켓</a></li>
                     </ul>
                 </li>
             </ul>
+            <button type="button" data-link="last" class="close">
+                <span class="blind-b">메뉴 닫기</span>
+            </button>
         </nav>
-        <div class="util">
-            <ul>
+        <div class="util p_a">
+            <ul class="clearfix">
                 <li><button type="button" class="btn_withus">함께하기</button></li>
                 <li><button type="button" class="btn_donate">후원하기</button></li>
             </ul>
@@ -74,42 +85,49 @@
     <section id="content">
         <article class="main_visual">
             <h2 class="blind-b">WHAT의 주요 이벤트 및 공지사항</h2>
-            <div class="swiper-container">
+            <div class="swiper-container p_r">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <a href="">
                             <img src="images/main/slider01x1.png" alt="" srcset="images/main/slider01x2.png 2x,images/main/slider01x3.png 3x">
-                            <strong>인스타그램 10만 팔로워<br>
-                                달성 이벤트<br>
-                                지금 확인세요!</strong>
-                            <p class="btn_more">자세히보기</p>
+                            <div class="txtwrap">
+                                <strong>인스타그램 10만 팔로워<br>
+                                    달성 이벤트<br>
+                                    지금 확인세요!</strong>
+                                <p class="btn_more">자세히보기</p>
+                            </div>
                         </a>
                     </div>
                     <div class="swiper-slide">
                         <a href="">
                             <img src="images/main/slide02x1.png" alt="" srcset="images/main/slide02x2.png 2x,images/main/slide02x3.png 3x">
-                            <strong>여러분의 후원으로 만든<br>
-                                [천마스크 디자인]을<br>
-                                투표해주세요</strong>
-                            <p class="btn_more">투표하기</p>
+                            <div class="txtwrap">
+                                <strong>여러분의 후원으로 만든<br>
+                                    [천마스크 디자인]을<br>
+                                    투표해주세요</strong>
+                                <p class="btn_more">투표하기</p>
+                            </div>
                         </a>
                     </div>
                     <div class="swiper-slide">
                         <a href="">
                             <img src="images/main/slider03x1.png" alt="" srcset="images/main/slider03x2.png 2x">
-                            <strong>WHAT X 장재인<br>
-                                초특급 콜라보<br>
-                                온라인 라이브 공연</strong>
-                            <p class="btn_more">자세히보기</p>
+                            <div class="txtwrap">
+                                <strong>WHAT X 장재인<br>
+                                    초특급 콜라보<br>
+                                    온라인 라이브 공연</strong>
+                                <p class="btn_more">자세히보기</p>
+                            </div>
                         </a>
                     </div>
                 </div>
-                <div class="swiper-pasination swiper-pasination-white"></div>
-                <div class="swiper-button-play"><img src="images/icon/common/play.svg" alt="재생"></div>
-                <div class="swiper-button-stop"><img src="images/icon/common/pause.svg" alt="일시정지"></div>
+                <div class="swiper-pagination swiper-pagination-white"></div>
+                <button class="autostop swiper-button-stop btn"><img src="images/icon/common/pause.svg" alt="일시정지"></button>
+                <button class="autoplay swiper-button-play btn"><img src="images/icon/common/play.svg" alt="재생"></button>
+                
             </div>
         </article>
-        <article class="donate">
+        <article class="donate p10">
             <h2 class="blind-b">6가지 분야의 재능기부 팀</h2>
             <ul>
                 <li>
@@ -144,67 +162,81 @@
                 </li>
                 <li>
                     <a href="">
-                        <h3 class="main_tit">Let's be together</h3>
+                        <h3 class="main_tit dark_gray">Let's be together</h3>
                         <img src="images/main/addx1.png" alt="" srcset="images/main/addx2.png 2x,images/main/addx3.png 3x">
                     </a>
                 </li>
             </ul>
         </article>
-        <article class="main_info">
+        <article class="main_info p10 clearfix p_r">
             <h2 class="main_tit">전체 공지사항</h2>
             <div class="txtwrap">
                 <ul>
                     <li>
-                        <p>[공연]코로나19로 온라인 공연 개최</p>
+                        <a href="">[공연]코로나19로 온라인 공연 개최</a>
                         <span>2020.11.13</span>
                     </li>
                     <li>
-                        <p>[헤어]'노숙자에게 희망과 용기를' 코로나19로 인해 일정연기</p>
+                        <a href="">[헤어]'노숙자에게 희망과 용기를' 코로나19로 인해 일정연기</a>
                         <span>2020.11.12</span>
                     </li>
                     <li>
-                        <p>후원금액 및 상품판매 수익 사용 내역</p>
+                        <a href="">후원금액 및 상품판매 수익 사용 내역</a>
                         <span>2020.10.31</span>
                     </li>
                     <li>
-                        <p>공식 인스타그램 팔로워 10만명 달성!</p>
+                        <a href="">공식 인스타그램 팔로워 10만명 달성!</a>
                         <span>2020.10.30</span>
                     </li>
                 </ul>
             </div>
-            <a href="" class="btn_add">더보기</a>
+            <a href="" class="p_a btn_add">더보기</a>
         </article>
-        <article class="promotion">
-            <h2 class="main_tit">11월 한정 프로모션</h2>
-            <p>2020.11.11 ~ 2020.11.23</p>
-            <a href="" class=".btn_border">자세히보기</a>
+        <article class="promotion p10">
+            <img src="images/main/promotionx1.jpg" alt="" srcset="images/main/promotionx2.jpg 2x,images/main/promotionx3.jpg 3x">
+            <div class="txtwrap p_a">
+                <h2 class="main_tit">11월 한정 프로모션</h2>
+                <p>2020.11.11 ~ 2020.11.23</p>
+                <a href="" class="border4">자세히보기</a>
+            </div>
         </article>
         <article class="money">
-            <h2 class="main_tit">누적후원금(2020.11)</h2>
-            <strong>20,255,600 원</strong>
+            <div class="txtwrap p_r">
+                <h2 class="main_tit">누적후원금(2020.11)</h2>
+                <strong>20,255,600 원</strong>
+            </div>
         </article>
-        <article class="sns">
+        <article class="sns center">
             <h2 class="blind-b">sns공유하기</h2>
             <p>WHAT과 함께한 선한 일상을<br>
                 SNS에 공유해주세요</p>
             <ul class="snsicon">
-                <li><span class="blind-b">카카오톡</span></li>
-                <li><span class="blind-b">인스타그램</span></li>
-                <li><span class="blind-b">트위터</span></li>
-                <li><span class="blind-b">페이스북</span></li>
+                <li>
+                    <a href=""><img src="images/icon/common/kakaotalkx1.png" alt="카카오톡" srcset="images/icon/common/kakaotalkx2.png 2x,images/icon/common/kakaotalkx3.png 3x"></a>
+                </li>
+                <li>
+                    <a href=""><img src="images/icon/common/instagramx1.png" alt="인스타그램" srcset="images/icon/common/instagramx2.png 2x,images/icon/common/instagramx3.png 3x"></a>
+                </li>
+                <li>
+                    <a href=""><img src="images/icon/common/twitter01.svg" alt="트위터"></a>
+                </li>
+                <li>
+                    <a href=""><img src="images/icon/common/Facebookx1.png" alt="페이스북" srcset="images/icon/common/Facebookx2.png 2x,images/icon/common/Facebookx3.png 3x"></a>
+                </li>
+                
             </ul>
         </article>
     </section>
     <footer id="footer">
-        <a href="index.html" aria-label="WHAT"><img src="images/icon/common/navLogo.svg" alt=""></a>
-        <ul>
+        <a href="index.html"><img src="images/icon/common/logo.svg" alt="WHAT"></a>
+        <ul class="clearfix">
             <li><a href="">WHAT 소개</a></li>
             <li><a href="">저작권 안내</a></li>
             <li class="privacy"><a href="">개인정보 처리방침</a></li>
             <li><a href="">이용약관</a></li>
         </ul>
-        <address>주소  : 인천광역시 계양구 계양대로(작전동) | 대표자 : 남현주</address>
-        <p>e-mail : nam_guswn9845@naver.com</p>
+        <address>주소 : 인천광역시 계양구 계양대로(작전동) | 대표자 : 남현주 <br>
+        e-mail : nam_guswn9845@naver.com</address>
         <p class="copyright">COPYRIGHT ⓒ THE KOREA ARTIST TEAM FOR WHAT,<br>
             ALL RIGHT RESERVED</p>
     </footer>

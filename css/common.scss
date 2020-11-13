@@ -42,7 +42,7 @@ header,nav,section,article,footer{display: block;}
 .center{text-align: center;}
 .m-15{margin: 0 -15px;}
 .dark_gray{color: #171717;}
-.border4{@include radius(4px);border: 1px solid $dark_white;}
+.border4{@include radius($px4);border: 1px solid $dark_white;}
 .p10{padding: 0 10px;}
 
 
@@ -50,60 +50,59 @@ body{font-family: poppins,NtSansKR,cormorant;font-size: $px14;font-weight: 400;c
 
 //header
 #header{
-    position: fixed;top: 0;left: 0;width: 100%;height: 58px;z-index: 1000;background: $dark_gray;
+    position: fixed;top: 0;left: 0;width: 100%;height: 16.11111111111111vw;z-index: 1000;background: $dark_gray;
 }
 .logo{
+    @include transform(translate(-50%,-50%));
+    top:50%;left:50%;width: 25.83333333333333vw;height: 11.94444444444444vw;
     &,a img{position: absolute;}
-    top: calc(50% - 21.5px);left: calc(50% - 46.5px);width: 93px;height: 43px;
-    a img{padding-top: 10.5px;}
+    a img{margin-top: 3.009722222222222vw;}
 }
 .btn_menu{
     &,.line{position: absolute;}
-    top: 17px;left: 16px;width: 26px;height: 26px;z-index: 1100;overflow: hidden;
-    .line{width: 100%;height: 4px;left: 0;background: $white;}
+    top: $px17;left: $px16;width: $px26;height: $px26;z-index: 1100;overflow: hidden;
+    .line{width: 100%;height: $px4;left: 0;background: $white;}
     .top{top: 0;}
-    .mid{top: 11px;}
+    .mid{top: 3.055555555555556vw;}
     .btm{bottom: 0;width: 60%;}
-
-    &.active{
-        background: url("../images/icon/common/close.svg") no-repeat;width: 10vw;height: 10vw;left: 83.3vw;
-    }
 }
 #gnb{
-   /*  display:none; */position: fixed;top: 0;left: 0;bottom: 0;color: $dark_gray;font-weight: 700;background: $white;width: 83.3vw;overflow-y:auto;z-index: 100;
+   display:none;position: fixed;top: 0;left: -83.3vw;bottom: 0;color: $dark_gray;font-weight: 700;background: $white;width: 83.3vw;overflow-y:auto;z-index: 100;
     span{display:block;left: 0;top: $px44;width: 100vw;height: $px130;background: url("../images/icon/common/navLogo.svg") no-repeat;}
     >ul{
-        padding: $px26 0 9vw 0 ;margin-top: $px200;background: red;
+        padding: $px26 0 9vw 0 ;margin-top: $px200;
         >li{
-            padding: $px15 $px20;
+            padding: $px15 $px20;background: red;
+            &.on>a::after{background-image: url("../images/icon/common/up.svg");}
             >a{
-                position: relative;font-size: $px18;margin-bottom: $px5;
+                position: relative;font-size: $px18;margin-bottom: $px5;background: yellow;
                 &::after{
-                    @include transform(translateY(-50%));
+                    @include transform(translateY(-25%));
                     content:"";position: absolute;width: $px16;height: $px16;right: $px20;top: 50%;background: url("../images/icon/common/down.svg") no-repeat;}
             }
-            &.on>a::after{background-image: url(../images/icon/common/up.svg);}
         }
     }
     ul li a{display: block;height: $px25;line-height: $px25;}
     ul li ul{
-        /* display:none; */background: $dark_white;margin:0 -20px;padding: $px14 0;
+        display:none;background: $dark_white;margin:0 -20px;padding: $px14 0;
         li{
             padding: $px3 $px20;
             a{font-size: $px16;}
         }
     }
+    .close{position: absolute;left: 69.3vw;top: 1.1vw;width: 10vw;height: 10vw;background: url("../images/icon/common/close.svg") no-repeat;}
 }
 .util{
-    top: 15px;right: 10px;
-    ul{height: 22px;}
+    @include transform(translateY(-50%));
+    top: 50%;right: 10px;
     ul li{ 
-        float: left;
-        +li{margin-left: 8px;}
+        float: left;display: table;
+        +li{margin-left: $px8;}
         button{
             @include boxsizing;
-            @include radius(4px);
-            font-size: 8px;font-weight: 700;border: 1px solid $mint;width: 12.77777777777778vw;text-align: center;height: 26px;line-height: 26px;
+            @include radius($px4);
+            display: table-cell;vertical-align: middle;
+            font-size: $px8;font-weight: 700;border: 1px solid $mint;width: 12.77777777777778vw;height: 6.111111111111111vw;text-align: center;
             &.btn_donate{background: $mint;}
         }
         
@@ -113,8 +112,8 @@ body{font-family: poppins,NtSansKR,cormorant;font-size: $px14;font-weight: 400;c
 //footer
 #footer{
     @include boxsizing;
-    background: $dark_gray;width: 100%;font-size: 12px;text-align: center;margin-top:117px;padding: 50px 18px;
-    >a{display: inline-block;width: 146px;height: 33.48px;padding: 50px 0 42px;}
+    background: $dark_gray;width: 100%;font-size: $px12;text-align: center;margin-top:117px;padding: 50px 18px;
+    >a{display: inline-block;width: 40.55555555555556vw;height: 9.3vw;padding: $px50 0 $px42;}
     ul{
         li{
         display: inline-block;
