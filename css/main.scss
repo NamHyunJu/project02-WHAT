@@ -5,7 +5,7 @@
 .main_visual{
     margin-top:68px;font-weight: 700;width: 100%;
     .swiper-container{
-        height: 145vw;
+        height: 146.7vw;
         .swiper-wrapper{
             height: 136.1111111111111vw;
             .swiper-slide{
@@ -34,7 +34,7 @@
             height: 10px;
           }
         .swiper-pagination-bullet-active{background: $mint;}
-        >button{position: absolute;z-index: 100;bottom: 0;right: 38.6%;width: $px24;height: $px24;}
+        >button{position: absolute;z-index: 100;bottom: 0;right: 38.6%;width: $px30;height: $px30;}
         .autoplay{display: none;}
      }
 }
