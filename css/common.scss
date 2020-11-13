@@ -42,7 +42,7 @@ header,nav,section,article,footer{display: block;}
 .center{text-align: center;}
 .m-15{margin: 0 -15px;}
 .dark_gray{color: #171717;}
-.border4{@include radius($px4);border: 1px solid $dark_white;}
+.border4{@include radius($px4);border: $px1 solid $dark_white;}
 .p10{padding: 0 10px;}
 
 
@@ -67,15 +67,15 @@ body{font-family: poppins,NtSansKR,cormorant;font-size: $px14;font-weight: 400;c
     .btm{bottom: 0;width: 60%;}
 }
 #gnb{
-   display:none;position: fixed;top: 0;left: -83.3vw;bottom: 0;color: $dark_gray;font-weight: 700;background: $white;width: 83.3vw;overflow-y:auto;z-index: 100;
+   display:none;position: fixed;top: 0;left: -83.3vw;bottom: 0;color: $dark_gray;font-weight: 700;background: $white;width: 83.3vw;overflow-y:auto;z-index: 1200;
     span{display:block;left: 0;top: $px44;width: 100vw;height: $px130;background: url("../images/icon/common/navLogo.svg") no-repeat;}
     >ul{
         padding: $px26 0 9vw 0 ;margin-top: $px200;
         >li{
-            padding: $px15 $px20;background: red;
+            padding: $px15 $px20;
             &.on>a::after{background-image: url("../images/icon/common/up.svg");}
             >a{
-                position: relative;font-size: $px18;margin-bottom: $px5;background: yellow;
+                position: relative;font-size: $px18;margin-bottom: $px5;
                 &::after{
                     @include transform(translateY(-25%));
                     content:"";position: absolute;width: $px16;height: $px16;right: $px20;top: 50%;background: url("../images/icon/common/down.svg") no-repeat;}
@@ -96,18 +96,28 @@ body{font-family: poppins,NtSansKR,cormorant;font-size: $px14;font-weight: 400;c
     @include transform(translateY(-50%));
     top: 50%;right: 10px;
     ul li{ 
-        float: left;display: table;
+        float: left;
         +li{margin-left: $px8;}
         button{
             @include boxsizing;
             @include radius($px4);
-            display: table-cell;vertical-align: middle;
-            font-size: $px8;font-weight: 700;border: 1px solid $mint;width: 12.77777777777778vw;height: 6.111111111111111vw;text-align: center;
+            font-size: $px8;font-weight: 700;border: $px1 solid $mint;width: 12.77777777777778vw;height: 6.111111111111111vw;text-align: center;
             &.btn_donate{background: $mint;}
         }
         
     }
 }
+/* .fade{
+    @include transition(all 1s);
+    opacity: 0;
+    &.up{@include transform(translateY($px30));}
+    &.right{@include transform(translateX($px30));}
+}
+.fade.on{
+    opacity: 1;
+    &.up{@include transform(translateY(0));}
+    &.right{@include transform(translateX(0));}
+} */
 
 //footer
 #footer{

@@ -10,37 +10,44 @@
         height: 111.1111111111111vw;
         .swiper-slide{
             position: relative;
-            img{width: 75.6vw;}
-            .twtwrap{
-                position: absolute;z-index: 500;bottom: 0;right: 0;width: 74.3vw;height: 34.3vw;background: red/* rgba(23,23,23,0.8) */;
-                .sub_tit{font-size: $px18;line-height: 7.5vw;}
+            img{display:inline-block;width: 75.6vw;}
+            .txtwrap{
+                position: absolute;z-index: 500;bottom: 0;right: 0;width: $px200;background: rgba(23,23,23,0.8);padding: $px10 $px20 $px10 0;
+                .sub_tit{display:block;font-size: $px18;line-height: 7.5vw;}
                 p{
                     font-weight: 700;
+                    &.txt{margin-top: $px20;}
                     &.btn_goGoods{
                         @include boxsizing;
-                        font-size: $px8;text-align: center;height: $px12;line-height: $px12;}
+                        display:inline-block;font-size: $px8;text-align: center;height: $px30;line-height: $px30;width: $px70;margin-top: $px3;
+                    }
                 }
             }
         }
-        /* .swiper-pagination{bottom: 10px;
-            left: 7.5vw;
-            width: 53.61111111111111vw;background: red;} */
-        .swiper-pagination/* -fraction */{
-            bottom: 10px;
-            left: 7.5vw;
-            width: 53.61111111111111vw;height: 16.66666666666667vw;background: red;
+        .swiper-pagination{display: inline-block;}
+        .swiper-pagination-fraction{
+            @include transform(rotate(-90deg));
+            top: $px50;
+            width: 53.61111111111111vw;height: 16.66666666666667vw;font-family: cormorant;font-weight: 700;font-size: $px50;padding-bottom: 15%;
+            .line{
+                @include transform(translate(-50%));
+                position: absolute;width: $px50;height: 0.5555555555555556vw;top: 18%;left: 50%;background: $white;
+            }
         }
+        .swiper-pagination-current{padding-right: $px42;}
+        .swiper-pagination-total{padding-left: $px42;}
         >button{position: absolute;z-index: 100;bottom: 32.77777777777778vw;left: $px44;width: $px30;height: $px30;}
         .autoplay{display: none;}
     }
 }
 .tattooist{
-    padding-left: 10px;margin-top: 107px;width:100%;
+    margin-top: 107px;width:100%;
     .sub_tit{margin-bottom: 19px;}
     .swiper-slide{
-        width: $px101;
+        text-align: center;
         a,img{display: block;}
-        img{width: $px80;height: $px80;}
+        a{padding: 0 $px10;}
+        img{width: 100%;}
         p{font-size: $px12;line-height: $px18;margin-top: 5px;}
         }
 }
@@ -89,10 +96,10 @@
                 }
             }
             &:nth-child(5){
-                display: table;margin-top: 13px;
+                display: table;margin-top: $px13;
                 p{
                     display: table-cell;vertical-align: middle;
-                    border: 1px solid #f0f0f0;text-align: center;height: 25.55555555555556vw;font-size: $px14;/* 상속을 못받음 왜? */
+                     border: $px1 solid #f0f0f0;text-align: center;height: 25.55555555555556vw;font-size: $px12;
                 }
             }
             div{
@@ -100,10 +107,9 @@
                 .goods_txt{
                     @include boxsizing;
                     background: $mint;width: 100%;padding: $px17 0 $px17 $px17;
-                    .price{line-height: 14px;padding-top: 4px;}
+                    .price{line-height: $px12;padding-top: $px4}
                 }
             }
-            p{font-size: 12px;}
         }
     }
 }

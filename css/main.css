@@ -140,9 +140,9 @@
     .promotion .txtwrap p {
       font-size: 3.6111111111vw;
       line-height: 5.5555555556vw;
-      margin-bottom: 1px; }
+      margin-bottom: 0.2777777778vw; }
     .promotion .txtwrap a {
-      border: 1px solid #ffffff;
+      border: 0.2777777778vw solid #ffffff;
       font-size: 2.7777777778vw;
       line-height: 4.4444444444vw;
       text-align: center;

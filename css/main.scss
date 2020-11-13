@@ -82,8 +82,8 @@
         h2,p{text-shadow: $px3 0.5555555555555556vw $px3 #8a8a8a;}
         h2{margin-bottom: $px3;}
         p,a{font-weight: 700;}
-        p{font-size: $px13;line-height: $px20;margin-bottom: 1px;}
-        a{border: 1px solid $white;font-size: $px10;line-height: $px16;text-align: center;padding: $px4;}
+        p{font-size: $px13;line-height: $px20;margin-bottom: $px1;}
+        a{border: $px1 solid $white;font-size: $px10;line-height: $px16;text-align: center;padding: $px4;}
     }
 }
 @media

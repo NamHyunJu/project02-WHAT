@@ -15,18 +15,85 @@
     <script src="../js/sub.js"></script>
 </head>
 <body>
+    <header id="header">
+        <h1 class="logo">
+            <a href="../index.html"><img src="../images/icon/common/logo.svg" alt="WHAT"></a>
+        </h1>
+        <button class="btn_menu" type="button">
+            <span class="blind-b">메뉴 열기</span>
+            <span class="line top"></span>
+            <span class="line mid"></span>
+            <span class="line btm"></span>
+        </button>
+        <nav id="gnb" class="p_r">
+            <span class="p_a"></span><!-- navlogo -->
+            <ul>
+                <li class="gnb1">
+                    <a href="" data-link="first">재능기부 하기</a>
+                    <ul>
+                        <li><a href="">일러스트</a></li>
+                        <li><a href="tattoo.html">타투</a></li>
+                        <li><a href="">목소리 녹음</a></li>
+                        <li><a href="">헤어 디자인</a></li>
+                        <li><a href="">공연 및 연극</a></li>
+                        <li><a href="">기타 추가</a></li>
+                    </ul>
+                </li>
+                <li class="gnb2">
+                    <a href="">프로젝트</a>
+                    <ul>
+                        <li><a href="">진행중인 프로젝트</a></li>
+                        <li><a href="">예정 프로젝트</a></li>
+                        <li><a href="">지난 프로젝트</a></li>
+                        <li><a href="">프로젝트 결과</a></li>
+                    </ul>
+                </li>
+                <li class="gnb3">
+                    <a href="">후원하기</a>
+                    <ul>
+                        <li><a href="">정기후원 및 일시후원</a></li>
+                        <li><a href="">기념기부</a></li>
+                        <li><a href="">물품기부</a></li>
+                        <li><a href="">후원기금 사용내역</a></li>
+                    </ul>
+                </li>
+                <li class="gnb4">
+                    <a href="">함께하는 상품</a>
+                    <ul>
+                        <li><a href="">일러스트</a></li>
+                        <li><a href="">엽서</a></li>
+                        <li><a href="">타투 스티커</a></li>
+                        <li><a href="">마스킹테이프</a></li>
+                        <li><a href="">핸드폰케이스</a></li>
+                        <li><a href="">그립톡</a></li>
+                        <li><a href="">티켓</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <button type="button" data-link="last" class="close">
+                <span class="blind-b">메뉴 닫기</span>
+            </button>
+        </nav>
+        <div class="util p_a">
+            <ul class="clearfix">
+                <li><button type="button" class="btn_withus">함께하기</button></li>
+                <li><button type="button" class="btn_donate">후원하기</button></li>
+            </ul>
+        </div>
+    </header>
 
     <section id="content">
+        <h2 class="blind-b">재능기부 타투분야의 소개 및 활동</h2>
         <article class="sub_visual">
             <h2 class="blind-b">타투의 주요 이벤트 및 공지사항</h2>
-            <div class="swiper-container">
+            <div class="swiper-container p_r">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <a href="">
                             <img src="../images/tattoo/slider01x1.png" alt="" srcset="../images/tattoo/slider01x2.png 2x">
                             <div class="txtwrap">
                                 <strong class="sub_tit">타투[문신]가 있으면<br>조폭? 양아치?<br>편견은 그만!</strong>
-                                <p>타투이스트가 말하는 타투</p>
+                                <p class="txt">타투이스트가 말하는 타투</p>
                             </div>
                         </a>
                     </div>
@@ -35,7 +102,7 @@
                             <img src="../images/tattoo/slider02x1.png" alt="" srcset="../images/tattoo/slider02x2.png 2x">
                             <div class="txtwrap">
                                 <strong class="sub_tit">NEW ITEMS<br>홀로그램 그립톡<br>출시 이벤트</strong>
-                                <p class="btn_goGoods">상품 보러가기</p>
+                                <p class="btn_goGoods border4">상품 보러가기</p>
                             </div>
                         </a>
                     </div>
@@ -44,18 +111,18 @@
                             <img src="../images/tattoo/slider03x1.png" alt="" srcset="../images/tattoo/slider03x2.png 2x,../images/tattoo/slider03x3.png 3x">
                             <div class="txtwrap">
                                 <strong class="sub_tit">NEW ITEMS<br>크리스마스 ver<br>타투스티커 </strong>
-                                <p class="btn_goGoods">상품 보러가기</p>
+                                <p class="btn_goGoods border4">상품 보러가기</p>
                             </div>
                         </a>
                     </div>
                 </div>
-                <div class="swiper-pasination  swiper-pasination-white"></div>
-                <button class="swiper-button-stop autostop btn" title="일시정지"><img src="../images/icon/common/pause.svg" alt="일시정지"></button>
-                <button class="swiper-button-play autoplay btn" title="재생"><img src="../images/icon/common/play.svg" alt="재생"></button>
+                <div class="swiper-pagination"></div>
+                <button class="swiper-button-stop autostop btn"><img src="../images/icon/common/pause.svg" alt="일시정지"></button>
+                <button class="swiper-button-play autoplay btn"><img src="../images/icon/common/play.svg" alt="재생"></button>
             </div>
         </article>
         <article class="tattooist">
-            <h2 class="sub_tit">함께하는 타투이스트</h2>
+            <h2 class="sub_tit p10">함께하는 타투이스트</h2>
             <div class="swiper-container">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
@@ -67,7 +134,7 @@
                     <div class="swiper-slide">
                         <a href="">
                             <img src="../images/tattoo/tattooist02x1.png" alt="" srcset="../images/tattoo/tattooist02x2.png 2x,../images/tattoo/tattooist02x3.png 3x">
-                            <p>@siyeon_tattoo</p>
+                            <p>@siyeon_t</p>
                         </a>
                     </div>
                     <div class="swiper-slide">
@@ -79,19 +146,19 @@
                     <div class="swiper-slide">
                         <a href="">
                             <img src="../images/tattoo/tattooist04x1.png" alt="" srcset="../images/tattoo/tattooist04x2.png 2x,../images/tattoo/tattooist04x3.png 3x">
-                            <p>@tattoo_ararl</p>
+                            <p>@tattoo_arar</p>
                         </a>
                     </div>
                     <div class="swiper-slide">
                         <a href="">
                             <img src="../images/tattoo/tattooist05x1.png" alt="" srcset="../images/tattoo/tattooist05x2.png 2x,../images/tattoo/tattooist05x3.png 3x">
-                            <p>@tattoo_solgil</p>
+                            <p>@t_solgil</p>
                         </a>
                     </div>
                     <div class="swiper-slide">
                         <a href="">
                             <img src="../images/tattoo/tattooist06x1.png" alt="" srcset="../images/tattoo/tattooist06x2.png 2x,../images/tattoo/tattooist06x3.png 3x">
-                            <p>@tattoo_namoo</p>
+                            <p>@t_namoo</p>
                         </a>
                     </div>
                 </div>
@@ -103,7 +170,7 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <a href=""><img src="../images/tattoo/coverup02x1.JPG" alt="노랑,보라색의 꽃을 가지고있는 보라빛이 나는 고래가 있다" srcset="../images/tattoo/coverup02x2.JPG 2x"></a>
-                        <div class="txtwrap center">
+                        <div class="txtwrap center fade up">
                             <p class="txt">예쁜 고래로 흉터를 가려드렸어요<br>
                                 시선분산용으로 제작해 드렸어요! 너무 크지 않답니다</p>
                             <a href=""><p class="instar_id">create by @siyeon_tattoo</p></a>
@@ -111,7 +178,7 @@
                     </div>
                     <div class="swiper-slide">
                         <a href=""><img src="../images/tattoo/coverup03x1.JPG" alt="잎이 풍성한 파란나무 위에 별이 빛나는 하늘이 있다" srcset="../images/tattoo/coverup03x2.JPG 2x"></a>
-                        <div class="txtwrap center">
+                        <div class="txtwrap center fade up">
                             <p class="txt">손목의 흉터를 파란나무와 하늘로 가려드렸어요<br>
                                 이젠 아프지말고 항상 행복만 가득하길</p>
                             <a href=""><p class="instar_id">create by @tattoo_basil</p></a>
@@ -119,7 +186,7 @@
                     </div>
                     <div class="swiper-slide">
                         <a href=""><img src="../images/tattoo/coverup01x1.JPG" alt="굳건한 느낌의 소나무가 있고 소나무의 우측상단에는 작은 보름달이 있다" srcset="../images/tattoo/coverup01x2.PNG"></a>
-                        <div class="txtwrap center">
+                        <div class="txtwrap center fade up">
                             <p class="txt">진한 흉터위에 나무로 가려드렸어요!<br>
                                 앞으로는 행복한 일들만 가득하길 바라요</p>
                             <a href=""><p class="instar_id">create by @tattoo_namoo</p></a>
@@ -165,8 +232,8 @@
                         </div>
                     </a>
                 </li>
-                <li><a><span aria-label="상품 더보기" title="상품 더보기"></span></a></li>
-                <li><p>판매수익의 50% 이상을<br>기부합니다</p></li>
+                <li><a href=""><span aria-label="상품 더보기" title="상품 더보기"></span></a></li>
+                <li><p class="fade up">판매수익의 50% 이상을<br>기부합니다</p></li>
             </ul>
         </article>
         <article class="sns center">

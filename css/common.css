@@ -102,7 +102,7 @@ header, nav, section, article, footer {
 .border4 {
   -webkit-border-radius: 1.1111111111vw;
   border-radius: 1.1111111111vw;
-  border: 1px solid #f6f4f4; }
+  border: 0.2777777778vw solid #f6f4f4; }
 
 .p10 {
   padding: 0 10px; }
@@ -170,7 +170,7 @@ body {
   background: #ffffff;
   width: 83.3vw;
   overflow-y: auto;
-  z-index: 100; }
+  z-index: 1200; }
   #gnb span {
     display: block;
     left: 0;
@@ -182,15 +182,13 @@ body {
     padding: 7.2222222222vw 0 9vw 0;
     margin-top: 55.5555555556vw; }
     #gnb > ul > li {
-      padding: 4.1666666667vw 5.5555555556vw;
-      background: red; }
+      padding: 4.1666666667vw 5.5555555556vw; }
       #gnb > ul > li.on > a::after {
         background-image: url("../images/icon/common/up.svg"); }
       #gnb > ul > li > a {
         position: relative;
         font-size: 5vw;
-        margin-bottom: 1.3888888889vw;
-        background: yellow; }
+        margin-bottom: 1.3888888889vw; }
         #gnb > ul > li > a::after {
           -webkit-transform: translateY(-25%);
           transform: translateY(-25%);
@@ -228,8 +226,7 @@ body {
   top: 50%;
   right: 10px; }
   .util ul li {
-    float: left;
-    display: table; }
+    float: left; }
     .util ul li + li {
       margin-left: 2.2222222222vw; }
     .util ul li button {
@@ -237,17 +234,26 @@ body {
       box-sizing: border-box;
       -webkit-border-radius: 1.1111111111vw;
       border-radius: 1.1111111111vw;
-      display: table-cell;
-      vertical-align: middle;
       font-size: 2.2222222222vw;
       font-weight: 700;
-      border: 1px solid #44AEC6;
+      border: 0.2777777778vw solid #44AEC6;
       width: 12.77777777777778vw;
       height: 6.111111111111111vw;
       text-align: center; }
       .util ul li button.btn_donate {
         background: #44AEC6; }
 
+/* .fade{
+    @include transition(all 1s);
+    opacity: 0;
+    &.up{@include transform(translateY($px30));}
+    &.right{@include transform(translateX($px30));}
+}
+.fade.on{
+    opacity: 1;
+    &.up{@include transform(translateY(0));}
+    &.right{@include transform(translateX(0));}
+} */
 #footer {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
