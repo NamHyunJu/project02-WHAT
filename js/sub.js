@@ -13,6 +13,7 @@ $(document).ready(function(){
         },
         
         autoplay: {
+          delay: 2000,
         },
       });
 

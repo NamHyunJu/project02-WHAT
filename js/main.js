@@ -8,6 +8,7 @@ $(document).ready(function(){
       el: '.swiper-pagination',
     },
     autoplay: {
+      delay: 2000,
     },
   });
   //일시정지
