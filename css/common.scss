@@ -53,7 +53,7 @@ body{font-family: poppins,NtSansKR,cormorant;font-size: $px14;font-weight: 400;c
     position: fixed;top: 0;left: 0;width: 100%;height: 16.11111111111111vw;z-index: 1000;background: $dark_gray;
 }
 .logo{
-    @include transform(translate(-50%,-50%));
+    @include transform(translate(-90%,-50%));
     top:50%;left:50%;width: 25.83333333333333vw;height: 11.94444444444444vw;
     &,a img{position: absolute;}
     a img{margin-top: 3.009722222222222vw;}
@@ -101,13 +101,13 @@ body{font-family: poppins,NtSansKR,cormorant;font-size: $px14;font-weight: 400;c
         button{
             @include boxsizing;
             @include radius($px4);
-            font-size: $px8;font-weight: 700;border: $px1 solid $mint;width: 12.77777777777778vw;height: 6.111111111111111vw;text-align: center;
+            font-size: $px12;font-weight: 700;border: $px1 solid $mint;width: 15vw;height: $px26;text-align: center;
             &.btn_donate{background: $mint;}
         }
         
     }
 }
-/* .fade{
+.fade{
     @include transition(all 1s);
     opacity: 0;
     &.up{@include transform(translateY($px30));}
@@ -117,19 +117,25 @@ body{font-family: poppins,NtSansKR,cormorant;font-size: $px14;font-weight: 400;c
     opacity: 1;
     &.up{@include transform(translateY(0));}
     &.right{@include transform(translateX(0));}
-} */
+}
 
 //footer
 #footer{
     @include boxsizing;
-    background: $dark_gray;width: 100%;font-size: $px12;text-align: center;margin-top:117px;padding: 50px 18px;
-    >a{display: inline-block;width: 40.55555555555556vw;height: 9.3vw;padding: $px50 0 $px42;}
-    ul{
-        li{
-        display: inline-block;
-        +li{margin:0 3px;}
-        .privacy{font-weight: 700;}
-        }
+    background:$dark_gray;width: 100%;font-size: $px12;text-align: center;margin-top:117px;padding: 50px 18px;
+    &::before{
+        @include transform(translate(-50%));
+        content: "";position: absolute;top: $px50;left: center;background: url("../images/icon/common/logo.svg") no-repeat;width: 40.55555555555556vw;height: 9.3vw;
     }
-    .copyright{padding-bottom: 50px;}
+    .footer{
+        padding-top: $px80;
+        ul{
+            li{
+            display: inline-block;
+            +li{margin:0 3px;}
+            &.privacy{font-weight: 700;}
+            }
+        }
+        .copyright{padding-bottom: 50px;}
+    }
 }

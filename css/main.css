@@ -4,7 +4,7 @@
   font-weight: 700;
   width: 100%; }
   .main_visual .swiper-container {
-    height: 145vw; }
+    height: 146.7vw; }
     .main_visual .swiper-container .swiper-wrapper {
       height: 136.1111111111111vw; }
       .main_visual .swiper-container .swiper-wrapper .swiper-slide {
@@ -56,8 +56,8 @@
       z-index: 100;
       bottom: 0;
       right: 38.6%;
-      width: 6.6666666667vw;
-      height: 6.6666666667vw; }
+      width: 8.3333333333vw;
+      height: 8.3333333333vw; }
     .main_visual .swiper-container .autoplay {
       display: none; }
 
@@ -94,7 +94,7 @@
         .main_info .txtwrap ul li a {
           display: inline-block;
           height: 100%;
-          width: 70%;
+          width: 75%;
           color: #171717;
           font-weight: 700; }
         .main_info .txtwrap ul li span {

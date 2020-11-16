@@ -19,7 +19,7 @@
                     &.txt{margin-top: $px20;}
                     &.btn_goGoods{
                         @include boxsizing;
-                        display:inline-block;font-size: $px8;text-align: center;height: $px30;line-height: $px30;width: $px70;margin-top: $px3;
+                        display:inline-block;font-size: $px12;text-align: center;height: $px30;line-height: $px30;width: $px70;margin-top: $px3;
                     }
                 }
             }

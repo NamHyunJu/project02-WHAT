@@ -126,8 +126,8 @@ body {
   background: #171717; }
 
 .logo {
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-90%, -50%);
+  transform: translate(-90%, -50%);
   top: 50%;
   left: 50%;
   width: 25.83333333333333vw;
@@ -234,26 +234,37 @@ body {
       box-sizing: border-box;
       -webkit-border-radius: 1.1111111111vw;
       border-radius: 1.1111111111vw;
-      font-size: 2.2222222222vw;
+      font-size: 3.3333333333vw;
       font-weight: 700;
       border: 0.2777777778vw solid #44AEC6;
-      width: 12.77777777777778vw;
-      height: 6.111111111111111vw;
+      width: 15vw;
+      height: 7.2222222222vw;
       text-align: center; }
       .util ul li button.btn_donate {
         background: #44AEC6; }
 
-/* .fade{
-    @include transition(all 1s);
-    opacity: 0;
-    &.up{@include transform(translateY($px30));}
-    &.right{@include transform(translateX($px30));}
-}
-.fade.on{
-    opacity: 1;
-    &.up{@include transform(translateY(0));}
-    &.right{@include transform(translateX(0));}
-} */
+.fade {
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+  opacity: 0; }
+  .fade.up {
+    -webkit-transform: translateY(8.3333333333vw);
+    transform: translateY(8.3333333333vw); }
+  .fade.right {
+    -webkit-transform: translateX(8.3333333333vw);
+    transform: translateX(8.3333333333vw); }
+
+.fade.on {
+  opacity: 1; }
+  .fade.on.up {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
+  .fade.on.right {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); }
+
 #footer {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -263,18 +274,25 @@ body {
   text-align: center;
   margin-top: 117px;
   padding: 50px 18px; }
-  #footer > a {
-    display: inline-block;
+  #footer::before {
+    -webkit-transform: translate(-50%);
+    transform: translate(-50%);
+    content: "";
+    position: absolute;
+    top: 13.8888888889vw;
+    left: center;
+    background: url("../images/icon/common/logo.svg") no-repeat;
     width: 40.55555555555556vw;
-    height: 9.3vw;
-    padding: 13.8888888889vw 0 11.6666666667vw; }
-  #footer ul li {
-    display: inline-block; }
-    #footer ul li + li {
-      margin: 0 3px; }
-    #footer ul li .privacy {
-      font-weight: 700; }
-  #footer .copyright {
-    padding-bottom: 50px; }
+    height: 9.3vw; }
+  #footer .footer {
+    padding-top: 22.2222222222vw; }
+    #footer .footer ul li {
+      display: inline-block; }
+      #footer .footer ul li + li {
+        margin: 0 3px; }
+      #footer .footer ul li.privacy {
+        font-weight: 700; }
+    #footer .footer .copyright {
+      padding-bottom: 50px; }
 
 /*# sourceMappingURL=common.css.map */
