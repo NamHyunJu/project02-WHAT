@@ -44,11 +44,11 @@
       -webkit-box-sizing: border-box;
       box-sizing: border-box;
       padding-right: 10vw;
-      bottom: 0px; }
+      bottom: 1.1111111111vw; }
     .main_visual .swiper-container .swiper-pagination-bullet {
       background: #ffffff;
-      width: 10px;
-      height: 10px; }
+      width: 2.7777777778vw;
+      height: 2.7777777778vw; }
     .main_visual .swiper-container .swiper-pagination-bullet-active {
       background: #44AEC6; }
     .main_visual .swiper-container > button {
@@ -66,21 +66,22 @@
   line-height: 8.3333333333vw; }
 
 .donate {
-  margin-top: 29px; }
+  margin-top: 8.3333333333vw; }
   .donate ul li {
-    position: relative; }
+    position: relative;
+    overflow: hidden; }
     .donate ul li + li {
-      margin-top: 6px; }
+      margin-top: 1.666666666666667vw; }
     .donate ul li a img {
       width: 100%;
       height: 100%; }
   .donate .main_tit {
     position: absolute;
-    left: 30px;
+    left: 25px;
     bottom: 17.5px; }
 
 .main_info {
-  margin-top: 54px; }
+  margin-top: 15vw; }
   .main_info .txtwrap {
     background: #ffffff;
     font-size: 3.3333333333vw; }
@@ -126,7 +127,7 @@
   position: relative; }
   .promotion img {
     width: 100%;
-    margin-top: 60px; }
+    margin-top: 16.6666666667vw; }
   .promotion .txtwrap {
     top: 22.8vw;
     left: 8.8vw;
@@ -136,6 +137,10 @@
     .promotion .txtwrap h2 {
       margin-bottom: 0.8333333333vw; }
     .promotion .txtwrap p, .promotion .txtwrap a {
+      -webkit-transition-delay: 0.5s;
+      -moz-transition-delay: 0.5s;
+      -o-transition-delay: 0.5s;
+      transition-delay: 0.5s;
       font-weight: 700; }
     .promotion .txtwrap p {
       font-size: 3.6111111111vw;
@@ -156,7 +161,7 @@
     background-image: url("../images/main/promotionx3.jpg"); } }
 .money {
   position: relative;
-  margin-top: 60px;
+  margin-top: 16.6666666667vw;
   text-align: center; }
   .money .txtwrap {
     left: 0;
@@ -176,7 +181,7 @@
     line-height: 10.5555555556vw; }
 
 .sns p {
-  margin: 90px auto 38px; }
+  margin: 25vw auto 10.5555555556vw; }
 .sns .snsicon li {
   display: inline-block; }
   .sns .snsicon li:nth-child(3) {

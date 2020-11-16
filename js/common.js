@@ -2,19 +2,25 @@ $(document).ready(function(){
   var _first=$('#gnb [data-link="first"]');
   var _last=$('#gnb [data-link="last"]');
   var timer=0;
+  
+  //스크롤 event
   $(window).on('scroll',function(){
     var scrollT=$(this).scrollTop();
     clearTimeout(timer);
     timer=setTimeout(function(){
-
       $('.fade').each(function(){
-        if(scrollT>$(this).offset().top-600){
-          $(this).addClass('on');
-        }
+        if(scrollT>$(this).offset().top-550) {$(this).addClass('on');}
+      },50);
+
+    });
+    timer=setTimeout(function(){
+      $('.big').each(function(){
+        if(scrollT>$(this).offset().top-500) {$(this).addClass('on');}
       },50);
     });
-  });
+    
 
+  });
 
     //메뉴열기 클릭
   $('.btn_menu').on('click',function(){

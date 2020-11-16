@@ -101,22 +101,31 @@ body{font-family: poppins,NtSansKR,cormorant;font-size: $px14;font-weight: 400;c
         button{
             @include boxsizing;
             @include radius($px4);
-            font-size: $px12;font-weight: 700;border: $px1 solid $mint;width: 14.44444444444444vw;height: $px30;text-align: center;
+            font-size: $px12;font-weight: 700;border: $px1 solid $mint;width: 14.44444444444444vw;height: $px26;text-align: center;
             &.btn_donate{background: $mint;}
         }
         
     }
 }
 .fade{
-    @include transition(all 1s);
+    @include transition(all 0.8s);
     opacity: 0;
     &.up{@include transform(translateY($px30));}
+    &.down{@include transform(translateY(-$px30));}
     &.right{@include transform(translateX($px30));}
+    &.left{@include transform(translateX(-$px30));}
 }
 .fade.on{
     opacity: 1;
-    &.up{@include transform(translateY(0));}
-    &.right{@include transform(translateX(0));}
+    &.up,&.down{@include transform(translateY(0));}
+    &.right,&.left{@include transform(translateX(0));}
+}
+.big{
+    @include transform(scale(1.2));
+}
+.big.on{
+    @include transform(scale(1));
+    @include transition(transform 1s);
 }
 
 //footer

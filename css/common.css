@@ -238,32 +238,50 @@ body {
       font-weight: 700;
       border: 0.2777777778vw solid #44AEC6;
       width: 14.44444444444444vw;
-      height: 8.3333333333vw;
+      height: 7.2222222222vw;
       text-align: center; }
       .util ul li button.btn_donate {
         background: #44AEC6; }
 
 .fade {
-  -webkit-transition: all 1s;
-  -moz-transition: all 1s;
-  -o-transition: all 1s;
-  transition: all 1s;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  transition: all 0.8s;
   opacity: 0; }
   .fade.up {
     -webkit-transform: translateY(8.3333333333vw);
     transform: translateY(8.3333333333vw); }
+  .fade.down {
+    -webkit-transform: translateY(-8.3333333333vw);
+    transform: translateY(-8.3333333333vw); }
   .fade.right {
     -webkit-transform: translateX(8.3333333333vw);
     transform: translateX(8.3333333333vw); }
+  .fade.left {
+    -webkit-transform: translateX(-8.3333333333vw);
+    transform: translateX(-8.3333333333vw); }
 
 .fade.on {
   opacity: 1; }
-  .fade.on.up {
+  .fade.on.up, .fade.on.down {
     -webkit-transform: translateY(0);
     transform: translateY(0); }
-  .fade.on.right {
+  .fade.on.right, .fade.on.left {
     -webkit-transform: translateX(0);
     transform: translateX(0); }
+
+.big {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2); }
+
+.big.on {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: transform 1s;
+  -moz-transition: transform 1s;
+  -o-transition: transform 1s;
+  transition: transform 1s; }
 
 #footer {
   -webkit-box-sizing: border-box;
