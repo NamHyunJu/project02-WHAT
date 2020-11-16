@@ -126,8 +126,8 @@ body {
   background: #171717; }
 
 .logo {
-  -webkit-transform: translate(-90%, -50%);
-  transform: translate(-90%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
   width: 25.83333333333333vw;
@@ -228,7 +228,7 @@ body {
   .util ul li {
     float: left; }
     .util ul li + li {
-      margin-left: 2.2222222222vw; }
+      margin-left: 1.3888888889vw; }
     .util ul li button {
       -webkit-box-sizing: border-box;
       box-sizing: border-box;
@@ -237,8 +237,8 @@ body {
       font-size: 3.3333333333vw;
       font-weight: 700;
       border: 0.2777777778vw solid #44AEC6;
-      width: 15vw;
-      height: 7.2222222222vw;
+      width: 14.44444444444444vw;
+      height: 8.3333333333vw;
       text-align: center; }
       .util ul li button.btn_donate {
         background: #44AEC6; }
