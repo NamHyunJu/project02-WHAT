@@ -129,9 +129,11 @@
         color: #999999;
         margin-bottom: 9px; }
     .coverup .swiper-container .swiper-pagination {
-      bottom: 20px; }
+      bottom: 2.7777777778vw; }
     .coverup .swiper-container .swiper-pagination-bullet {
-      background: #a8a8a8; }
+      background: #a8a8a8;
+      width: 2.2222222222vw;
+      height: 2.2222222222vw; }
     .coverup .swiper-container .swiper-pagination-bullet-active {
       background: #282828; }
 
