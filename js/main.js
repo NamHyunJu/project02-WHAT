@@ -29,7 +29,7 @@ $(document).ready(function(){
     var limitLen = 25;
     $(this).each(function(){
       if($(this).text().length>limitLen){
-        $(this).text( $(this).text().substr(0,limitLen)+'...');//string.substr( start, length ) 특정부분만 골라낼때 사용
+        $(this).text( $(this).text().substr(0,limitLen)+'...');
       }
     });
   });

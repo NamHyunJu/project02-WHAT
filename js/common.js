@@ -9,7 +9,7 @@ $(document).ready(function(){
     clearTimeout(timer);
     timer=setTimeout(function(){
       $('.fade').each(function(){
-        if(scrollT>$(this).offset().top-550) {$(this).addClass('on');}
+        if(scrollT>$(this).offset().top-500) {$(this).addClass('on');}
       },50);
 
     });

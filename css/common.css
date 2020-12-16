@@ -163,7 +163,7 @@ body {
   display: none;
   position: fixed;
   top: 0;
-  left: -83.3vw;
+  left: -9999px;
   bottom: 0;
   color: #171717;
   font-weight: 700;
@@ -171,11 +171,11 @@ body {
   width: 83.3vw;
   overflow-y: auto;
   z-index: 1200; }
-  #gnb span {
+  #gnb > span {
     display: block;
     left: 0;
+    right: 0;
     top: 12.2222222222vw;
-    width: 100vw;
     height: 36.1111111111vw;
     background: url("../images/icon/common/navLogo.svg") no-repeat; }
   #gnb > ul {
@@ -213,7 +213,7 @@ body {
       #gnb ul li ul li a {
         font-size: 4.4444444444vw; }
   #gnb .close {
-    position: absolute;
+    position: fixed;
     left: 69.3vw;
     top: 1.1vw;
     width: 10vw;

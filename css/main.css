@@ -137,10 +137,10 @@
     .promotion .txtwrap h2 {
       margin-bottom: 0.8333333333vw; }
     .promotion .txtwrap p, .promotion .txtwrap a {
-      -webkit-transition-delay: 0.5s;
-      -moz-transition-delay: 0.5s;
-      -o-transition-delay: 0.5s;
-      transition-delay: 0.5s;
+      -webkit-transition-delay: 0.2s;
+      -moz-transition-delay: 0.2s;
+      -o-transition-delay: 0.2s;
+      transition-delay: 0.2s;
       font-weight: 700; }
     .promotion .txtwrap p {
       font-size: 3.6111111111vw;

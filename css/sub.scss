@@ -67,9 +67,9 @@
             }
         }
         .swiper-pagination{
-            bottom: 20px;
+            bottom: $px10;
         }
-        .swiper-pagination-bullet {background: #a8a8a8;}
+        .swiper-pagination-bullet {background: #a8a8a8;width: $px8;height: $px8;}
         .swiper-pagination-bullet-active{background: #282828;}
     }
 }

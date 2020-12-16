@@ -81,7 +81,7 @@
         h2,p{text-shadow: $px3 0.5555555555555556vw $px3 #8a8a8a;}
         h2{margin-bottom: $px3;}
         p,a{
-            @include delay(0.5s);
+            @include delay(0.2s);
             font-weight: 700;
         }
         p{font-size: $px13;line-height: $px20;margin-bottom: $px1;}
